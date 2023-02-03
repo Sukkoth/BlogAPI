@@ -1,7 +1,11 @@
 const router = require('express').Router();
+const { indexOfBlogs, showBlog, updateBlog, deleteBlog, storeBlog } = require('./../app/controllers/BlogController')
 
-router.get('/', (req, res)=>{
-    res.json({message: 'Blogs index'})
-})
+
+router.get('/', indexOfBlogs)
+router.post('/store', storeBlog)
+router.get('/show/:blogId', showBlog)
+router.put('/update/:blogId', updateBlog)
+router.delete('/delete/:blogId', deleteBlog)
 
 module.exports = router

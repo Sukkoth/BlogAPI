@@ -1,0 +1,56 @@
+Users
+    without auth
+        view all (Blog index)
+        show (Blog show)
+    with auth
+        comment (add to comments table)
+        like (increment Blog likes)
+
+    Writer studio (auth)
+        view all
+        store
+        show
+        update
+        delete
+
+Comment
+    comment on blog (store)
+    edit comment (update)
+    delete your comment  (delete)
+
+
+Models
+    User
+        name
+        email
+        password
+        image(later)
+    Blog
+        title
+        sub_title
+        text
+        user
+        likes
+    Comment
+        blog
+        user
+        text
+    Like    
+        user
+        blog
+
+Controllers
+    UserController
+        register
+        login
+        userInfo
+    BlogController 
+        viewBLogs(writer)
+        storeBlog(writer)
+        updateBlog(writer)
+        deleteBlog(writer)
+
+        viewBlogs(every user)
+        showBlog(every user)
+    LikeController
+        likeBlog(every user)    if(found) remove else like

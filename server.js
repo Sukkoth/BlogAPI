@@ -10,6 +10,8 @@ const errorHandler = require('./app/middlewares/errorHandler')
 app.use(express.urlencoded({extended: true}))
 
 app.use('/users', require('./routes/user'))
+app.use('/blogs', require('./routes/blog'))
+
 
 
 app.use(errorHandler)
