@@ -41,16 +41,16 @@ Models
 
 Controllers
     UserController
-        register
-        login
-        userInfo
+        register [x]
+        login [x]
+        userInfo [x]
     BlogController 
-        viewBLogs(writer)
-        storeBlog(writer)
-        updateBlog(writer)
-        deleteBlog(writer)
+        viewBLogs(writer) [x]
+        storeBlog(writer) [x]
+        updateBlog(writer) [x]
+        deleteBlog(writer) [x]
 
-        viewBlogs(every user)
-        showBlog(every user)
-    LikeController
-        likeBlog(every user)    if(found) remove else like
+        viewBlogs(every user) [x]
+        showBlog(every user) [x]
+ 
+        likeBlog(every user)    if(found) remove else like [x]

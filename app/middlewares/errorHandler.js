@@ -1,7 +1,8 @@
 const { APP_ENV } = require("../../config/env")
 
 const errorHandler = (err, req, res, next) => {
-    const statusCode = req.statusCode != 200 ? res.statusCode : 500
+    const statusCode = req.statusCode != 200 ? res.statusCode : 500 
+
     res.status(statusCode)
     
     res.json({

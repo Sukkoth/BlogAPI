@@ -11,6 +11,7 @@ app.use(express.urlencoded({extended: true}))
 
 app.use('/users', require('./routes/user'))
 app.use('/blogs', require('./routes/blog'))
+app.use('/blogs/comments', require('./routes/comment'))
 
 
 
